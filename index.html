@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="assets/image/favicon.ico?v=2" />
+    <title>Animal Aid</title>
+
+    <!-- Font Awesome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    />
+
+    <!-- Swiper JS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <!-- JQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Counter -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <!-- Header Start -->
+    <header class="header">
+      <a href="#" class="logo"><i class="fa-solid fa-paw"></i> AnimalAid</a>
+      <nav class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#service">Service</a>
+        <a href="#donate">Donation</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="icons">
+        <!-- Responsive Navbar -->
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="#search" id="search-btn" class="fas fa-search"></a>
+        <a href="#donate" class="fas fa-hand-holding-heart"></a>
+        <a id="login-btn" class="fas fa-user"></a>
+      </div>
+    </header>
+    <!-- Header End -->
+
+    <!-- Main Content Start -->
+    <main>
+      <!-- Hero Start-->
+      <article class="hero" id="home">
+        <div class="row">
+          <div class="content">
+            <h1>
+              Be a Hero to Rescue
+              <br />
+              <strong>World's Animals</strong>
+            </h1>
+            <p class="hero-text">
+              Will you help create a better tomorrow for vulnerable wildlife and
+              fragile habitats around the world?. Today you can save the
+              species, tomorrow may be to late. Make your donation today and be
+              a hero for our beautiful planet.
+            </p>
+            <div class="wrapper">
+              <a class="btn-hero" href="#donate"
+                ><span
+                  ><i class="fa-solid fa-hand-holding-heart"></i> Donate
+                  Now!</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Hero End -->
+
+      <!-- About Start -->
+      <article class="about-container">
+        <div class="about-image" id="about"></div>
+        <div class="about-description">
+          <p><i class="fa-solid fa-leaf"></i> Learn About Us</p>
+          <h1>Worldwide Animal <strong>Charity Organization</strong></h1>
+          <p>
+            Animal Aid is an organization that saves animals from suffering,
+            rehabilitates and releases them back into the wild, and also works
+            to protect their precious natural habitat. Our organization was
+            founded on the belief that animals are entitled to good and
+            respectful treatment at the hands of humans and should be protected
+            by law.
+          </p>
+          <div class="icons-container">
+            <div class="icons">
+              <i class="fa-solid fa-bowl-food"></i>
+              <span>Foods</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-droplet"></i>
+              <span>Water</span>
+            </div>
+            <div class="icons">
+              <i class="fa-solid fa-briefcase-medical"></i>
+              <span>Medical</span>
+            </div>
+          </div>
+        </div>
+      </article>
+      <!-- About End -->
+
+      <!-- Service Start  -->
+      <article>
+        <div class="container swiper">
+          <div class="title" id="service">
+            <p class="title-sub">What We Do</p>
+            <h1 class="title-description">
+              We Work Differently to <br />
+              Keep The World Safe
+            </h1>
+          </div>
+          <div class="slide-container">
+            <div class="card-wrapper swiper-wrapper">
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="assets/image/doing-img1.avif" alt="" />
+                </div>
+                <div class="profile-details">
+                  <div class="name-job">
+                    <h3 class="name">Save Nature</h3>
+                    <h4 class="job">We keep nature healthy and quality</h4>
+                    <a href="class" ="btn-service">Read More</a>
+                    <!-- <h4 class="job">Full Stack Developer</h4> -->
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="assets/image/doing-img2.avif" alt="" />
+                </div>
+                <div class="profile-details">
+                  <div class="name-job">
+                    <h3 class="name">Save Ocean</h3>
+                    <h4 class="job">We keep Ocean healthy and quality</h4>
+                    <a href="class" ="btn-service">Read More</a>
+                    <!-- <h4 class="job">Full Stack Developer</h4> -->
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="assets/image/doing-img3.avif" alt="" />
+                </div>
+                <div class="profile-details">
+                  <div class="name-job">
+                    <h3 class="name">Rehabilitation</h3>
+                    <h4 class="job">We provide care for injured animals</h4>
+                    <a href="class" ="btn-service">Read More</a>
+                    <!-- <h4 class="job">Full Stack Developer</h4> -->
+                  </div>
+                </div>
+              </div>
+              <div class="card swiper-slide">
+                <div class="image-box">
+                  <img src="assets/image/doing-img4.avif" alt="" />
+                </div>
+                <div class="profile-details">
+                  <div class="name-job">
+                    <h3 class="name">Release Them</h3>
+                    <h4 class="job">We release animals into their habitat</h4>
+                    <a href="class" ="btn-service">Read More</a>
+                    <!-- <h4 class="job">Full Stack Developer</h4> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next swiper-navBtn"></div>
+          <div class="swiper-button-prev swiper-navBtn"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </article>
+      <!-- Service End -->
+
+      <!-- Counter Start-->
+      <article class="main-counter">
+        <div class="main-counter-container">
+          <div class="counter-up">
+            <div class="content">
+              <div class="box">
+                <div class="icon"><i class="fa-solid fa-earth-asia"></i></div>
+                <div class="counter-container">
+                  <div class="counter">120</div>
+                  <div class="plus">+</div>
+                </div>
+                <div class="text">Countries</div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fa-solid fa-people-group"></i></div>
+                <div class="counter-container">
+                  <div class="counter">1600</div>
+                  <div class="plus">+</div>
+                </div>
+                <div class="text">Volunteers</div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fa-sharp fa-solid fa-paw"></i></div>
+                <div class="counter-container">
+                  <div class="counter">6000</div>
+                  <div class="plus">+</div>
+                </div>
+                <div class="text">Species</div>
+              </div>
+              <div class="box">
+                <div class="icon"><i class="fa-solid fa-sack-dollar"></i></div>
+                <div class="counter-container">
+                  <div class="counter">10000</div>
+                  <div class="plus">$</div>
+                </div>
+                <div class="text">Our Goal</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- Counter End -->
+
+      <!-- Donate Start -->
+
+      <article class="donate">
+        <div class="donate-container">
+          <div class="title">
+            <p class="title-sub">Popular Causes</p>
+            <h1 class="title-description">
+              Let's know about charity causes <br />
+              Around the world
+            </h1>
+          </div>
+
+          <div class="box-container" id="donate">
+            <div class="box">
+              <div class="image">
+                <img src="assets/image/charity-img1.avif" alt="" />
+              </div>
+              <div class="content">
+                <h3>Orang Utan</h3>
+                <p>
+                  Save for Orang Utan around the world. Today you can save them
+                  tomorrow may be too late
+                </p>
+                <a href="#donate" class="btn-donate">Donate Now</a>
+                <div class="icons">
+                  <span> <i class="fas fa-calendar"></i> 28 Dec, 2022 </span>
+                  <span> <i class="fa-solid fa-dollar-sign"></i> 7500 </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="image">
+                <img src="assets/image/charity-img2.avif" alt="" />
+              </div>
+              <div class="content">
+                <h3>Bear</h3>
+                <p>
+                  Let's save for Bear around the world. Today you can save them
+                  tomorrow may be too late
+                </p>
+                <a href="#donate" class="btn-donate">Donate Now</a>
+                <div class="icons">
+                  <span> <i class="fas fa-calendar"></i> 28 Dec, 2022 </span>
+                  <span> <i class="fa-solid fa-dollar-sign"></i> 3500 </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="image">
+                <img src="assets/image/charity-img3.avif" alt="" />
+              </div>
+              <div class="content">
+                <h3>Koala</h3>
+                <p>
+                  Let's save for Koala around the world. Today you can save them
+                  tomorrow may be too late
+                </p>
+                <a href="#donate" class="btn-donate">Donate Now</a>
+                <div class="icons">
+                  <span> <i class="fas fa-calendar"></i> 28 Dec, 2022 </span>
+                  <span> <i class="fa-solid fa-dollar-sign"></i> 9500 </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="image">
+                <img src="assets/image/charity-img4.avif" alt="" />
+              </div>
+              <div class="content">
+                <h3>Dog</h3>
+                <p>
+                  Let's save for Dog around the world. Today you can save them
+                  tomorrow may be too late
+                </p>
+                <a href="#donate" class="btn-donate">Donate Now</a>
+                <div class="icons">
+                  <span> <i class="fas fa-calendar"></i> 30 Dec, 2022 </span>
+                  <span> <i class="fa-solid fa-dollar-sign"></i> 8500 </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="image">
+                <img src="assets/image/charity-img5.avif" alt="" />
+              </div>
+              <div class="content">
+                <h3>Cat</h3>
+                <p>
+                  Let's save for Cat around the world. Today you can save them
+                  tomorrow may be too late
+                </p>
+                <a href="#donate" class="btn-donate">Donate Now</a>
+                <div class="icons">
+                  <span> <i class="fas fa-calendar"></i> 30 Dec, 2022 </span>
+                  <span> <i class="fa-solid fa-dollar-sign"></i> 7500 </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="box">
+              <div class="image">
+                <img src="assets/image/charity-img6.avif" alt="" />
+              </div>
+              <div class="content">
+                <h3>Tiger</h3>
+                <p>
+                  Let's save for Tiger around the world. Today you can save them
+                  tomorrow may be too late
+                </p>
+                <a href="#donate" class="btn-donate">Donate Now</a>
+                <div class="icons">
+                  <span> <i class="fas fa-calendar"></i> 30 Dec, 2022 </span>
+                  <span> <i class="fa-solid fa-dollar-sign"></i> 1500 </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id="load-more">Load More</div>
+        </div>
+      </article>
+      <!-- Donate End -->
+
+      <article id="contact">
+        <!-- Contact Start -->
+        <div class="contact-form">
+          <div class="card">
+            <h3>Contact Us</h3>
+            <form action="" method="POST">
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="text"
+                  name="email"
+                  id="email"
+                  placeholder="Your Email..."
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="subject">Subjet</label>
+                <input
+                  type="text"
+                  name="subject"
+                  id="subject"
+                  placeholder="Subject..."
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="pesan">Message</label>
+                <textarea
+                  name="pesan"
+                  id="pesan"
+                  cols="15"
+                  rows="10"
+                  placeholder="Your Message..."
+                  required
+                ></textarea>
+              </div>
+              <div class="form-group">
+                <input type="button" value="Submit" class="btn-contact" />
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- My Bio Start -->
+        <aside class="my-bio">
+          <div class="contact-bio">
+            <div class="card">
+              <img src="assets/image/thoriq-img.avif" class="profile-contact" />
+              <h3 class="name-bio">Muhammad Thoriq Ali Said</h3>
+              <p class="text-muted">
+                System Information Student at Hasanuddin University
+              </p>
+              <table border="1" cellpadding="10">
+                <tbody>
+                  <tr>
+                    <th>Email</th>
+                    <td>muhthoriqas1719@gmail.com</td>
+                  </tr>
+                  <tr>
+                    <th>Hobbi</th>
+                    <td>Watch Film & Playing Game</td>
+                  </tr>
+                  <tr>
+                    <th>Motto</th>
+                    <td>Your mindset determines the quality of your life</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </aside>
+        <!-- My Bio End -->
+      </article>
+    </main>
+    <!-- Main Content End -->
+
+    <!-- Footer Start -->
+    <footer class="footer" id="footer">
+      <div class="main-content">
+        <div class="left box">
+          <h2>About us</h2>
+          <div class="content">
+            <p>
+              Animal Aid is an organization that saves animals from suffering,
+              rehabilitates and releases them back into the wild, and also works
+              to protect their precious natural habitat. Our organization was
+              founded on the belief that animals are entitled to good and
+              respectful treatment at the hands of humans and should be
+              protected by law.
+            </p>
+
+            <div class="social">
+              <a href="https://www.linkedin.com/in/thoriqas/" target="_blank"
+                ><span class="fab fa-linkedin"></span
+              ></a>
+              <a href="https://twitter.com/MThoriq_AS" target="_blank"
+                ><span class="fab fa-twitter"></span
+              ></a>
+              <a href="https://www.instagram.com/mthoriq_as/" target="_blank"
+                ><span class="fab fa-instagram"></span
+              ></a>
+              <a href="https://github.com/Muhthoriqas" target="_blank"
+                ><span class="fa-brands fa-github"></span
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="center box">
+          <h2>Address</h2>
+          <div class="content">
+            <div class="place">
+              <span class="fas fa-map-marker-alt"></span>
+              <span class="text">Indonesia, Earth</span>
+            </div>
+            <div class="phone">
+              <span class="fas fa-phone-alt"></span>
+              <span class="text">+6282-1234-5679</span>
+            </div>
+            <div class="email">
+              <span class="fas fa-envelope"></span>
+              <span class="text">AnimalAid@gmail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Become Member</h2>
+          <div class="content">
+            <form action="">
+              <div class="email">
+                <div class="text">Name</div>
+                <input type="email" placeholder="Your Name ..." required />
+              </div>
+              <div class="msg">
+                <div class="text">Email</div>
+                <input type="text" placeholder="Your Email..." required />
+              </div>
+              <div class="btn-member">
+                <button type="button">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="bottom">
+        <span class="credit"
+          >Copyright <span class="far fa-copyright"></span> 2022
+        </span>
+        <span>
+          <a href="https://github.com/Muhthoriqas">Thoriq AS</a> | All rights
+          reserved.</span
+        >
+      </div>
+    </footer>
+    <!-- Footer End  -->
+
+    <!-- SwiperJS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <!-- External JS -->
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>
