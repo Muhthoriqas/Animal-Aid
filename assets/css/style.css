@@ -1,7 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;500;600;700&display=swap");
 * {
-  font-family: "Poppins";
+  font-family: "Poppins", sans-serif;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -33,7 +32,7 @@ article {
   background-color: #f1f1f1;
 }
 
-/* Header CSS Start */
+/* Header Style Start */
 
 .header {
   position: -webkit-sticky;
@@ -65,9 +64,7 @@ article {
   transform: rotate(-360deg);
   color: #fff;
 }
-.header .images {
-  width: 100%;
-}
+
 .header .navbar a {
   font-size: 2rem;
   margin: 0 1rem;
@@ -93,24 +90,25 @@ article {
   background: #91be55;
 }
 .header .icons .fas:hover {
-  color: #000;
+  color: #334;
   transform: scale(1.2);
   cursor: pointer;
   background: #fff;
 }
 
-#menu-btn {
+.header .icons .menu-btn {
   display: none;
 }
-/* Header CSS End */
+/* Header Style End */
 
-/* Hero CSS Start */
+/* Hero Style Start */
 .hero {
   padding: 13rem 9%;
   background-image: url("../image/hero-img.avif");
   background-size: cover;
   background-position: center;
   background-color: #f1f1f1;
+  content-visibility: auto;
 }
 .hero .row {
   display: flex;
@@ -134,22 +132,7 @@ article {
   margin: 20px 0 20px 0;
 }
 
-.hero .row .content .fa-search-plus {
-  transform: rotate(90deg);
-  font-size: 2.3rem;
-  color: white;
-}
-.hero .row .content .fa-search-plus:hover {
-  color: #fff;
-}
-.hero .row .images {
-  flex: 1 1 45rem;
-}
-.hero .row .images img {
-  width: 100%;
-}
-
-.btn-hero {
+.hero .row .content .wrapper .btn-hero {
   display: block;
   width: 180px;
   padding: 13px;
@@ -163,12 +146,12 @@ article {
   background: #91be55;
 }
 
-.btn-hero span {
+.hero .row .content .wrapper .btn-hero span {
   position: relative;
   z-index: 2;
 }
 
-.btn-hero:after {
+.hero .row .content .wrapper .btn-hero:after {
   position: absolute;
   content: "";
   top: 0;
@@ -180,25 +163,25 @@ article {
   border-radius: 8px;
 }
 
-.btn-hero:hover {
-  color: #000;
+.hero .row .content .wrapper .btn-hero:hover {
+  color: #334;
 }
 
-.btn-hero:hover:after {
+.hero .row .content .wrapper .btn-hero:hover:after {
   width: 100%;
 }
 
-/* Hero CSS End */
+/* Hero Style End */
 
-/* About CSS Start */
-.about-container {
+/* About Style Start */
+.about {
   background-color: #f1f1f1;
   display: flex;
   align-items: center;
   padding-top: 140px;
 }
 
-.about-image {
+.about .about-image {
   flex-basis: 50%;
   background-image: url("../image/about-img.avif");
   min-height: 500px;
@@ -208,13 +191,20 @@ article {
   box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 50px 4px;
   background-repeat: no-repeat;
   background-size: cover;
+  content-visibility: auto;
 }
 
-.about-description {
+.about .about-container {
   flex-basis: 60%;
   padding: 45px;
 }
-.about-description p:nth-child(1) {
+.about .about-container p:nth-child(1) i {
+  margin-bottom: 5px;
+  position: relative;
+  font-size: 25px;
+  color: #91be55;
+}
+.about .about-container p:nth-child(1) {
   margin-bottom: 5px;
   position: relative;
   font-size: 22px;
@@ -222,17 +212,13 @@ article {
   text-transform: capitalize;
   color: #91be55;
 }
-.about-description p:nth-child(1) i {
-  margin-bottom: 5px;
-  position: relative;
-  font-size: 25px;
-  color: #91be55;
-}
-.about-description p:nth-child(3) {
+
+.about .about-container p:nth-child(3) {
   margin: 0 8px 0;
   font-size: 16px;
+  color: #334;
 }
-.about-description .icons-container {
+.about .about-container .icons-container {
   display: flex;
   gap: 1rem;
   flex-wrap: wrap;
@@ -241,12 +227,12 @@ article {
   color: #91be55;
 }
 
-.about-description .icons-container .icons:hover {
+.about .about-container .icons-container .icons:hover {
   color: #99d98c;
   transform: scale(0.9);
 }
 
-.about-description .icons-container .icons {
+.about .about-container .icons-container .icons {
   background: #eee;
   border-radius: 0.5rem;
   border: 0.1rem solid rgba(0, 0, 0, 0.2);
@@ -258,30 +244,26 @@ article {
   padding: 1.5rem 1rem;
 }
 
-.about-description .icons-container .icons i {
+.about .about-container .icons-container .icons i {
   font-size: 2.5rem;
   color: #91be55;
 }
 
-.about-description .icons-container .icons span {
+.about .about-container .icons-container .icons span {
   font-size: 1.5rem;
-  color: #000;
+  color: #334;
 }
-.about-description h1 {
+.about .about-container h1 {
   font-weight: 400;
   font-size: 4.8rem;
-  color: #212121;
-  background-clip: text;
+  color: #334;
   line-height: 55px;
+  margin-bottom: 18px;
 }
 
-.motivator-caption h2 {
-  font-size: 45px;
-}
+/* About Style End */
 
-/* About CSS End */
-
-/* Service CSS Start*/
+/* Service Style Start*/
 
 .container {
   max-width: 1120px;
@@ -315,14 +297,17 @@ article {
 }
 .card .image-box {
   height: 200px;
+  content-visibility: auto;
 }
 .card .image-box img {
-  width: 100%;
-  height: 100%;
+  margin-top: 10px;
+  max-width: 315px;
+  max-height: 200px;
   border-radius: 8px 8px 0 0;
+  content-visibility: auto;
 }
 
-.profile-details .name {
+.profile-details h1 {
   font-size: 18px;
   font-weight: 800;
   align-items: center;
@@ -353,7 +338,7 @@ article {
   top: 63%;
 }
 .swiper-pagination-bullet {
-  background-color: #000;
+  background-color: #334;
 }
 .btn-service {
   display: flex;
@@ -368,11 +353,11 @@ article {
 }
 .btn-service:hover {
   background: #f1f1f1;
-  color: #212121;
+  color: #334;
 }
-/* Service CSS End */
+/* Service Style End */
 
-/* Counter CSS Start */
+/* Counter Style Start */
 .main-counter {
   padding: 5.5rem 0px;
 }
@@ -381,6 +366,7 @@ article {
   background: url("../image/counter-img.avif") no-repeat center center fixed;
   background-size: cover;
   text-align: center;
+  content-visibility: auto;
 }
 .counter-container {
   display: flex;
@@ -472,9 +458,9 @@ article {
     padding: 30px 20px 0 20px;
   }
 }
-/* Counter CSS End */
+/* Counter Style End */
 
-/* Donation CSS Start */
+/* Donation Style Start */
 .donate .donate-container {
   max-width: 1200px;
   margin: 0 auto;
@@ -507,19 +493,22 @@ article {
   overflow: hidden;
   height: 250px;
   border-radius: 5px;
+  content-visibility: auto;
 }
 
 .donate .donate-container .box-container .box .image img {
+  content-visibility: auto;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
 .donate .donate-container .box-container .box:hover .image img {
+  content-visibility: auto;
   transform: scale(1.1);
 }
 
-.donate .donate-container .box-container .box .content h3 {
+.donate .donate-container .box-container .box .content h1 {
   font-size: 20px;
   color: #334;
 }
@@ -534,7 +523,7 @@ article {
 .donate .donate-container .box-container .box .content .btn {
   display: inline-block;
   padding: 10px 30px;
-  border: 1px solid #212121;
+  border: 1px solid #334;
   color: #fff;
   font-size: 16px;
   border-radius: 7px;
@@ -544,7 +533,7 @@ article {
 .donate .donate-container .box-container .box .content .btn:hover {
   background-color: #99d98c;
   border-color: #99d98c;
-  color: #000;
+  color: #334;
 }
 
 .donate .donate-container .box-container .box .content .icons {
@@ -553,7 +542,7 @@ article {
   justify-content: space-between;
   margin-top: 20px;
   padding-top: 15px;
-  border-top: 1px solid #000;
+  border-top: 1px solid #334;
 }
 
 .donate .donate-container .box-container .box .content .icons span {
@@ -579,7 +568,7 @@ article {
 }
 .donate .donate-container .box-container .box .content .btn-donate:hover {
   background: #f1f1f1;
-  color: #212121;
+  color: #334;
 }
 
 #load-more {
@@ -601,9 +590,9 @@ article {
   color: #fff;
 }
 
-/* Donation CSS End */
+/* Donation Style End */
 
-/* Contact CSS Start */
+/* Contact Style Start */
 #contact {
   display: flex;
   padding: 25px 70px;
@@ -619,14 +608,14 @@ article {
   flex: 1;
 }
 
-.contact-form > .card > h3 {
+.contact-form .card h1 {
   text-align: center;
   padding-top: 30px;
   border-radius: 5px 5px 0px 0px;
   font-size: 35px;
 }
 
-.contact-form > .card > h3::after {
+.contact-form .card h1::after {
   content: " ";
   display: block;
   width: 100px;
@@ -646,7 +635,7 @@ input {
   border: 1px solid #8f8f8f;
   border-radius: 5px;
 }
-textarea {
+.text-area-messages {
   width: 100%;
   padding: 10px;
   border-style: none;
@@ -654,7 +643,7 @@ textarea {
   border-radius: 5px;
   height: 80px;
 }
-label {
+.label-contact {
   font-size: 18px;
   display: block;
   margin-bottom: 7px;
@@ -674,10 +663,10 @@ input.btn-contact {
 
 input.btn-contact:hover {
   background: #f1f1f1;
-  color: #212121;
+  color: #334;
 }
 
-.form-group > p {
+.form-group p {
   color: #8f8f8f;
   font-size: 14px;
 }
@@ -695,13 +684,13 @@ input.btn-contact:hover {
   text-align: center;
 }
 
-.contact-bio > .card {
+.contact-bio .card {
   padding: 10px 25px;
   margin-top: 10px;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-.contact-bio > .card::after {
+.contact-bio .card::after {
   content: " ";
   display: block;
   height: 130px;
@@ -728,10 +717,10 @@ input.btn-contact:hover {
   display: inline-block;
   margin: 0 auto;
   margin-bottom: 30px;
-  background: #212121;
+  background: #334;
 }
 
-.contact-bio > table {
+.contact-bio table {
   border-spacing: 0px;
   width: auto;
   border: 2px solid #f7f7f7;
@@ -756,16 +745,19 @@ td {
   background-color: #f7f7f7;
 }
 
-/* Contact CSS End */
+/* Contact Style End */
 
-/* Footer CSS Start */
+/* Footer Style Start */
 footer {
   bottom: 0px;
   width: 100%;
   background: #eee;
+  padding-top: 40px;
 }
 .main-content {
   display: flex;
+  padding-top: 10px;
+  box-shadow: 0px 0 10px rgba(0, 0, 0, 0.4);
 }
 .main-content .box {
   flex-basis: 50%;
@@ -820,7 +812,7 @@ footer .left .content .social a span {
 }
 footer .left .content .social a span:hover {
   background: #99d98c;
-  color: #000;
+  color: #334;
   transform: scale(1.1);
 }
 footer .center .content .fas {
@@ -837,7 +829,7 @@ footer .center .content .fas {
 }
 footer .center .content .fas:hover {
   background: #73a942;
-  color: #000;
+  color: #334;
 }
 footer .center .content .text {
   font-size: 1.4rem;
@@ -862,7 +854,7 @@ footer .right form textarea {
   font-size: 1.3rem;
   background: #fff;
   padding-left: 10px;
-  border: 1px solid #212121;
+  border: 1px solid #334;
   border-radius: 7px;
 }
 footer .right form input:focus,
@@ -891,7 +883,7 @@ footer .right form .btn-member button {
 }
 footer .right form .btn-member button:hover {
   background: #fff;
-  color: #212121;
+  color: #334;
 }
 
 footer .bottom {
@@ -901,7 +893,7 @@ footer .bottom {
   background: #eee;
 }
 footer .bottom span {
-  color: #000;
+  color: #334;
 }
 footer .bottom a {
   color: #91be55;
@@ -911,7 +903,7 @@ footer .bottom a:hover {
   zoom: 110%;
 }
 
-/* Footer CSS End */
+/* Footer Style End */
 
 @media (max-width: 1100px) {
   .navigation-header {
@@ -944,7 +936,7 @@ footer .bottom a:hover {
     text-align: center;
   }
 
-  .active > a,
+  .active a,
   .navigation-header .nav-item a:hover {
     color: #91be55;
     border-bottom: none;
@@ -975,7 +967,7 @@ footer .bottom a:hover {
     padding: 5px;
   }
 
-  header > nav {
+  header nav {
     padding: 5px;
   }
 
@@ -992,22 +984,22 @@ footer .bottom a:hover {
   #menu-btn {
     display: inline-block;
   }
-  .header .navbar {
+  header .navbar {
     position: absolute;
     top: 99%;
     left: 0;
     right: 0;
-    background: #212121;
+    background: #334;
     border-top: 0.1rem solid rgba(0, 0, 0, 0.2);
     border-bottom: 0.1rem solid rgba(0, 0, 0, 0.2);
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
-  .header .navbar.active {
+  header .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
     clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
   }
-  .header .navbar a {
+  header .navbar a {
     font-size: 2rem;
     margin: 2rem;
     display: block;

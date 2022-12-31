@@ -3,7 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Author: Muhammad Thoriq Ali Said - Animal Aid Website - Dicoding Final Submission at 'Belajar Pemrograman Dasar Web' Corse"
+    />
+    <meta name="theme-color" content="#f1f1f1" />
+    <link rel="manifest" href="assets/manifest/manifest.json" />
     <link rel="icon" type="image/x-icon" href="assets/image/favicon.ico?v=2" />
+    <link rel="apple-touch-icon" href="assets/image/apple-touch-icon.webp" />
     <title>Animal Aid</title>
 
     <!-- Font Awesome  -->
@@ -21,8 +28,14 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
     <!-- Counter -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
+      defer
+    ></script>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
@@ -32,18 +45,27 @@
     <header class="header">
       <a href="#" class="logo"><i class="fa-solid fa-paw"></i> AnimalAid</a>
       <nav class="navbar">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#service">Service</a>
-        <a href="#donate">Donation</a>
-        <a href="#contact">Contact</a>
+        <a href="#home" aria-label="home">Home</a>
+        <a href="#about" aria-label="about">About</a>
+        <a href="#service" aria-label="service">Service</a>
+        <a href="#donate" aria-label="donation">Donation</a>
+        <a href="#contact" aria-label="contact">Contact</a>
       </nav>
       <div class="icons">
         <!-- Responsive Navbar -->
-        <div id="menu-btn" class="fas fa-bars"></div>
-        <a href="#search" id="search-btn" class="fas fa-search"></a>
-        <a href="#donate" class="fas fa-hand-holding-heart"></a>
-        <a id="login-btn" class="fas fa-user"></a>
+        <div id="menu-btn" class="fas fa-bars menu-btn"></div>
+        <a
+          href="#search"
+          id="search-btn"
+          class="fas fa-search"
+          aria-label="search"
+        ></a>
+        <a
+          href="#donate"
+          class="fas fa-hand-holding-heart"
+          aria-label="donate-navbar"
+        ></a>
+        <a href="#" id="login-btn" class="fas fa-user" aria-label="login"></a>
       </div>
     </header>
     <!-- Header End -->
@@ -66,7 +88,7 @@
               a hero for our beautiful planet.
             </p>
             <div class="wrapper">
-              <a class="btn-hero" href="#donate"
+              <a href="#donate" class="btn-hero"
                 ><span
                   ><i class="fa-solid fa-hand-holding-heart"></i> Donate
                   Now!</span
@@ -80,9 +102,9 @@
       <!-- Hero End -->
 
       <!-- About Start -->
-      <article class="about-container">
+      <article class="about">
         <div class="about-image" id="about"></div>
-        <div class="about-description">
+        <div class="about-container">
           <p><i class="fa-solid fa-leaf"></i> Learn About Us</p>
           <h1>Worldwide Animal <strong>Charity Organization</strong></h1>
           <p>
@@ -125,53 +147,73 @@
             <div class="card-wrapper swiper-wrapper">
               <div class="card swiper-slide">
                 <div class="image-box">
-                  <img src="assets/image/doing-img1.avif" alt="" />
+                  <img
+                    src="assets/image/doing-img1.avif"
+                    width="315"
+                    height="200"
+                    alt="Image"
+                    loading="lazy"
+                  />
                 </div>
                 <div class="profile-details">
                   <div class="name-job">
-                    <h3 class="name">Save Nature</h3>
-                    <h4 class="job">We keep nature healthy and quality</h4>
-                    <a href="class" ="btn-service">Read More</a>
-                    <!-- <h4 class="job">Full Stack Developer</h4> -->
+                    <h1>Save Nature</h1>
+                    <h2 class="job">We keep nature healthy and quality</h2>
+                    <a href="#service" class="btn-service">Read More</a>
                   </div>
                 </div>
               </div>
               <div class="card swiper-slide">
                 <div class="image-box">
-                  <img src="assets/image/doing-img2.avif" alt="" />
+                  <img
+                    src="assets/image/doing-img2.avif"
+                    width="315"
+                    height="200"
+                    alt="Image"
+                    loading="lazy"
+                  />
                 </div>
                 <div class="profile-details">
                   <div class="name-job">
-                    <h3 class="name">Save Ocean</h3>
-                    <h4 class="job">We keep Ocean healthy and quality</h4>
-                    <a href="class" ="btn-service">Read More</a>
-                    <!-- <h4 class="job">Full Stack Developer</h4> -->
+                    <h1>Save Ocean</h1>
+                    <h2 class="job">We keep Ocean healthy and quality</h2>
+                    <a hred="#service" class="btn-service">Read More</a>
                   </div>
                 </div>
               </div>
               <div class="card swiper-slide">
                 <div class="image-box">
-                  <img src="assets/image/doing-img3.avif" alt="" />
+                  <img
+                    src="assets/image/doing-img3.avif"
+                    width="315"
+                    height="200"
+                    alt="Image"
+                    loading="lazy"
+                  />
                 </div>
                 <div class="profile-details">
                   <div class="name-job">
-                    <h3 class="name">Rehabilitation</h3>
-                    <h4 class="job">We provide care for injured animals</h4>
-                    <a href="class" ="btn-service">Read More</a>
-                    <!-- <h4 class="job">Full Stack Developer</h4> -->
+                    <h1>Rehabilitation</h1>
+                    <h2 class="job">We provide care for injured animals</h2>
+                    <a hred="#service" class="btn-service">Read More</a>
                   </div>
                 </div>
               </div>
               <div class="card swiper-slide">
                 <div class="image-box">
-                  <img src="assets/image/doing-img4.avif" alt="" />
+                  <img
+                    src="assets/image/doing-img4.avif"
+                    width="315"
+                    height="200"
+                    alt="Image"
+                    loading="lazy"
+                  />
                 </div>
                 <div class="profile-details">
                   <div class="name-job">
-                    <h3 class="name">Release Them</h3>
-                    <h4 class="job">We release animals into their habitat</h4>
-                    <a href="class" ="btn-service">Read More</a>
-                    <!-- <h4 class="job">Full Stack Developer</h4> -->
+                    <h1>Release Them</h1>
+                    <h2 class="job">We release animals into their habitat</h2>
+                    <a hred="#service" class="btn-service">Read More</a>
                   </div>
                 </div>
               </div>
@@ -243,15 +285,21 @@
           <div class="box-container" id="donate">
             <div class="box">
               <div class="image">
-                <img src="assets/image/charity-img1.avif" alt="" />
+                <img
+                  src="assets/image/charity-img1.avif"
+                  alt="Image"
+                  loading="lazy"
+                />
               </div>
               <div class="content">
-                <h3>Orang Utan</h3>
+                <h1>Orang Utan</h1>
                 <p>
                   Save for Orang Utan around the world. Today you can save them
                   tomorrow may be too late
                 </p>
-                <a href="#donate" class="btn-donate">Donate Now</a>
+                <a href="#donate" class="btn-donate" aria-label="donate button"
+                  >Donate Now</a
+                >
                 <div class="icons">
                   <span> <i class="fas fa-calendar"></i> 28 Dec, 2022 </span>
                   <span> <i class="fa-solid fa-dollar-sign"></i> 7500 </span>
@@ -261,15 +309,21 @@
 
             <div class="box">
               <div class="image">
-                <img src="assets/image/charity-img2.avif" alt="" />
+                <img
+                  src="assets/image/charity-img2.avif"
+                  alt="Image"
+                  loading="lazy"
+                />
               </div>
               <div class="content">
-                <h3>Bear</h3>
+                <h1>Bear</h1>
                 <p>
                   Let's save for Bear around the world. Today you can save them
                   tomorrow may be too late
                 </p>
-                <a href="#donate" class="btn-donate">Donate Now</a>
+                <a href="#donate" class="btn-donate" aria-label="donate button"
+                  >Donate Now</a
+                >
                 <div class="icons">
                   <span> <i class="fas fa-calendar"></i> 28 Dec, 2022 </span>
                   <span> <i class="fa-solid fa-dollar-sign"></i> 3500 </span>
@@ -279,15 +333,21 @@
 
             <div class="box">
               <div class="image">
-                <img src="assets/image/charity-img3.avif" alt="" />
+                <img
+                  src="assets/image/charity-img3.avif"
+                  alt="Image"
+                  loading="lazy"
+                />
               </div>
               <div class="content">
-                <h3>Koala</h3>
+                <h1>Koala</h1>
                 <p>
                   Let's save for Koala around the world. Today you can save them
                   tomorrow may be too late
                 </p>
-                <a href="#donate" class="btn-donate">Donate Now</a>
+                <a href="#donate" class="btn-donate" aria-label="donate button"
+                  >Donate Now</a
+                >
                 <div class="icons">
                   <span> <i class="fas fa-calendar"></i> 28 Dec, 2022 </span>
                   <span> <i class="fa-solid fa-dollar-sign"></i> 9500 </span>
@@ -297,15 +357,21 @@
 
             <div class="box">
               <div class="image">
-                <img src="assets/image/charity-img4.avif" alt="" />
+                <img
+                  src="assets/image/charity-img4.avif"
+                  alt="Image"
+                  loading="lazy"
+                />
               </div>
               <div class="content">
-                <h3>Dog</h3>
+                <h1>Dog</h1>
                 <p>
                   Let's save for Dog around the world. Today you can save them
                   tomorrow may be too late
                 </p>
-                <a href="#donate" class="btn-donate">Donate Now</a>
+                <a href="#donate" class="btn-donate" aria-label="donate button"
+                  >Donate Now</a
+                >
                 <div class="icons">
                   <span> <i class="fas fa-calendar"></i> 30 Dec, 2022 </span>
                   <span> <i class="fa-solid fa-dollar-sign"></i> 8500 </span>
@@ -315,15 +381,21 @@
 
             <div class="box">
               <div class="image">
-                <img src="assets/image/charity-img5.avif" alt="" />
+                <img
+                  src="assets/image/charity-img5.avif"
+                  alt="Image"
+                  loading="lazy"
+                />
               </div>
               <div class="content">
-                <h3>Cat</h3>
+                <h1>Cat</h1>
                 <p>
                   Let's save for Cat around the world. Today you can save them
                   tomorrow may be too late
                 </p>
-                <a href="#donate" class="btn-donate">Donate Now</a>
+                <a href="#donate" class="btn-donate" aria-label="donate button"
+                  >Donate Now</a
+                >
                 <div class="icons">
                   <span> <i class="fas fa-calendar"></i> 30 Dec, 2022 </span>
                   <span> <i class="fa-solid fa-dollar-sign"></i> 7500 </span>
@@ -333,15 +405,21 @@
 
             <div class="box">
               <div class="image">
-                <img src="assets/image/charity-img6.avif" alt="" />
+                <img
+                  src="assets/image/charity-img6.avif"
+                  alt="Image"
+                  loading="lazy"
+                />
               </div>
               <div class="content">
-                <h3>Tiger</h3>
+                <h1>Tiger</h1>
                 <p>
                   Let's save for Tiger around the world. Today you can save them
                   tomorrow may be too late
                 </p>
-                <a href="#donate" class="btn-donate">Donate Now</a>
+                <a href="#donate" class="btn-donate" aria-label="donate button"
+                  >Donate Now</a
+                >
                 <div class="icons">
                   <span> <i class="fas fa-calendar"></i> 30 Dec, 2022 </span>
                   <span> <i class="fa-solid fa-dollar-sign"></i> 1500 </span>
@@ -358,10 +436,10 @@
         <!-- Contact Start -->
         <div class="contact-form">
           <div class="card">
-            <h3>Contact Us</h3>
+            <h1>Contact Us</h1>
             <form action="" method="POST">
               <div class="form-group">
-                <label for="email">Email</label>
+                <label class="label-contact" for="email">Email</label>
                 <input
                   type="text"
                   name="email"
@@ -371,7 +449,7 @@
                 />
               </div>
               <div class="form-group">
-                <label for="subject">Subjet</label>
+                <label class="label-contact" for="subject">Subjet</label>
                 <input
                   type="text"
                   name="subject"
@@ -381,10 +459,11 @@
                 />
               </div>
               <div class="form-group">
-                <label for="pesan">Message</label>
+                <label for="message">Message</label>
                 <textarea
-                  name="pesan"
-                  id="pesan"
+                  name="message"
+                  class="text-area-messages"
+                  id="message"
                   cols="15"
                   rows="10"
                   placeholder="Your Message..."
@@ -403,8 +482,13 @@
         <aside class="my-bio">
           <div class="contact-bio">
             <div class="card">
-              <img src="assets/image/thoriq-img.avif" class="profile-contact" />
-              <h3 class="name-bio">Muhammad Thoriq Ali Said</h3>
+              <img
+                src="assets/image/thoriq-img.avif"
+                alt="Thoriq Profile Photo"
+                class="profile-contact"
+                loading="lazy"
+              />
+              <h1 class="name-bio">Muhammad Thoriq Ali Said</h1>
               <p class="text-muted">
                 System Information Student at Hasanuddin University
               </p>
@@ -448,16 +532,28 @@
             </p>
 
             <div class="social">
-              <a href="https://www.linkedin.com/in/thoriqas/" target="_blank"
+              <a
+                href="https://www.linkedin.com/in/thoriqas/"
+                target="_blank"
+                aria-label="Linkedin"
                 ><span class="fab fa-linkedin"></span
               ></a>
-              <a href="https://twitter.com/MThoriq_AS" target="_blank"
+              <a
+                href="https://twitter.com/MThoriq_AS"
+                target="_blank"
+                aria-label="twitter"
                 ><span class="fab fa-twitter"></span
               ></a>
-              <a href="https://www.instagram.com/mthoriq_as/" target="_blank"
+              <a
+                href="https://www.instagram.com/mthoriq_as/"
+                target="_blank"
+                aria-label="instagram"
                 ><span class="fab fa-instagram"></span
               ></a>
-              <a href="https://github.com/Muhthoriqas" target="_blank"
+              <a
+                href="https://github.com/Muhthoriqas"
+                target="_blank"
+                aria-label="github"
                 ><span class="fa-brands fa-github"></span
               ></a>
             </div>
@@ -504,8 +600,10 @@
           >Copyright <span class="far fa-copyright"></span> 2022
         </span>
         <span>
-          <a href="https://github.com/Muhthoriqas">Thoriq AS</a> | All rights
-          reserved.</span
+          <a href="https://github.com/Muhthoriqas" aria-label="github"
+            >Thoriq AS</a
+          >
+          | All rights reserved.</span
         >
       </div>
     </footer>

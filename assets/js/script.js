@@ -56,7 +56,6 @@ loadMoreBtn.onclick = () => {
   let boxes = [
     ...document.querySelectorAll(".donate-container .box-container .box"),
   ];
-  console.log(boxes);
   for (var i = currentItem; i < currentItem + 3; i++) {
     boxes[i].style.display = "inline-block";
   }
