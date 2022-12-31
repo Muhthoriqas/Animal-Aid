@@ -11,6 +11,7 @@
     <link rel="manifest" href="assets/manifest/manifest.json" />
     <link rel="icon" type="image/x-icon" href="assets/image/favicon.ico?v=2" />
     <link rel="apple-touch-icon" href="assets/image/apple-touch-icon.webp" />
+
     <title>Animal Aid</title>
 
     <!-- Font Awesome  -->
@@ -19,26 +20,31 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
     />
 
-    <!-- Swiper JS -->
+    <!-- Swiper -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
     />
+
     <!-- JQuery -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
     <!-- Counter -->
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
-      defer
-    ></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"
-      defer
-    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- External JS -->
+    <script src="assets/js/script.js" defer></script>
+
+    <link
+      rel="preload"
+      href="assets/image/hero-img.avif"
+      as="image"
+      type="image/avif"
+    />
   </head>
   <body>
     <!-- Header Start -->
@@ -135,7 +141,7 @@
 
       <!-- Service Start  -->
       <article>
-        <div class="container swiper">
+        <div class="service-container swiper">
           <div class="title" id="service">
             <p class="title-sub">What We Do</p>
             <h1 class="title-description">
@@ -155,10 +161,12 @@
                     loading="lazy"
                   />
                 </div>
-                <div class="profile-details">
-                  <div class="name-job">
+                <div class="service-details-container">
+                  <div class="service-details">
                     <h1>Save Nature</h1>
-                    <h2 class="job">We keep nature healthy and quality</h2>
+                    <h2 class="service-name">
+                      We keep nature healthy and quality
+                    </h2>
                     <a href="#service" class="btn-service">Read More</a>
                   </div>
                 </div>
@@ -173,10 +181,12 @@
                     loading="lazy"
                   />
                 </div>
-                <div class="profile-details">
-                  <div class="name-job">
+                <div class="service-details-container">
+                  <div class="service-details">
                     <h1>Save Ocean</h1>
-                    <h2 class="job">We keep Ocean healthy and quality</h2>
+                    <h2 class="service-name">
+                      We keep Ocean healthy and quality
+                    </h2>
                     <a hred="#service" class="btn-service">Read More</a>
                   </div>
                 </div>
@@ -191,10 +201,12 @@
                     loading="lazy"
                   />
                 </div>
-                <div class="profile-details">
-                  <div class="name-job">
+                <div class="service-details-container">
+                  <div class="service-details">
                     <h1>Rehabilitation</h1>
-                    <h2 class="job">We provide care for injured animals</h2>
+                    <h2 class="service-name">
+                      We provide care for injured animals
+                    </h2>
                     <a hred="#service" class="btn-service">Read More</a>
                   </div>
                 </div>
@@ -209,10 +221,12 @@
                     loading="lazy"
                   />
                 </div>
-                <div class="profile-details">
-                  <div class="name-job">
+                <div class="service-details-container">
+                  <div class="service-details">
                     <h1>Release Them</h1>
-                    <h2 class="job">We release animals into their habitat</h2>
+                    <h2 class="service-name">
+                      We release animals into their habitat
+                    </h2>
                     <a hred="#service" class="btn-service">Read More</a>
                   </div>
                 </div>
@@ -432,7 +446,7 @@
       </article>
       <!-- Donate End -->
 
-      <article id="contact">
+      <article class="contact" id="contact">
         <!-- Contact Start -->
         <div class="contact-form">
           <div class="card">
@@ -441,6 +455,7 @@
               <div class="form-group">
                 <label class="label-contact" for="email">Email</label>
                 <input
+                  class="contact-input"
                   type="text"
                   name="email"
                   id="email"
@@ -451,6 +466,7 @@
               <div class="form-group">
                 <label class="label-contact" for="subject">Subjet</label>
                 <input
+                  class="contact-input"
                   type="text"
                   name="subject"
                   id="subject"
@@ -459,10 +475,10 @@
                 />
               </div>
               <div class="form-group">
-                <label for="message">Message</label>
+                <label for="message" class="label-contact">Message</label>
                 <textarea
+                  class="contact-textarea"
                   name="message"
-                  class="text-area-messages"
                   id="message"
                   cols="15"
                   rows="10"
@@ -492,22 +508,24 @@
               <p class="text-muted">
                 System Information Student at Hasanuddin University
               </p>
-              <table border="1" cellpadding="10">
-                <tbody>
-                  <tr>
-                    <th>Email</th>
-                    <td>muhthoriqas1719@gmail.com</td>
-                  </tr>
-                  <tr>
-                    <th>Hobbi</th>
-                    <td>Watch Film & Playing Game</td>
-                  </tr>
-                  <tr>
-                    <th>Motto</th>
-                    <td>Your mindset determines the quality of your life</td>
-                  </tr>
-                </tbody>
-              </table>
+              <div class="table-responsive">
+                <table class="bio-table">
+                  <tbody>
+                    <tr>
+                      <th>Email</th>
+                      <td>muhthoriqas1719@gmail.com</td>
+                    </tr>
+                    <tr>
+                      <th>Hobbi</th>
+                      <td>Watch Film & Playing Game</td>
+                    </tr>
+                    <tr>
+                      <th>Motto</th>
+                      <td>Your mindset determines the quality of your life</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
             </div>
           </div>
         </aside>
@@ -518,7 +536,7 @@
 
     <!-- Footer Start -->
     <footer class="footer" id="footer">
-      <div class="main-content">
+      <div class="main-content-footer">
         <div class="left box">
           <h2>About us</h2>
           <div class="content">
@@ -579,7 +597,7 @@
         <div class="right box">
           <h2>Become Member</h2>
           <div class="content">
-            <form action="">
+            <form>
               <div class="email">
                 <div class="text">Name</div>
                 <input type="email" placeholder="Your Name ..." required />
@@ -611,8 +629,5 @@
 
     <!-- SwiperJS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-
-    <!-- External JS -->
-    <script src="assets/js/script.js"></script>
   </body>
 </html>

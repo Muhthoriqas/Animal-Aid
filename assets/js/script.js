@@ -43,8 +43,9 @@ var swiper = new Swiper(".slide-container", {
 // Counter Animation
 $(document).ready(function () {
   $(".counter").counterUp({
-    delay: 10,
-    time: 800,
+    delay: 20,
+    time: 300,
+    triggerOnce: true,
   });
 });
 
