@@ -1,0 +1,17 @@
+{
+  "name": "Animal Aid",
+  "short_name": "animalaid",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#f1f1f1",
+  "theme_color": "#f1f1f1",
+  "icons": [
+    {
+      "src": "../image/icons-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+  "description": "Author: Muhammad Thoriq Ali Said - Animal Aid Website - Dicoding Final Submission at 'Belajar Pemrograman Dasar Web' Corse"
+}
