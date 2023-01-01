@@ -584,10 +584,6 @@ article {
   padding: 10px 20px 0px;
 }
 
-/* .contact-bio {
-  flex: 5;
-} */
-
 .contact .contact-form .card h1 {
   text-align: center;
   padding-top: 30px;
@@ -613,14 +609,14 @@ article {
   width: 100%;
   padding: 10px;
   border-style: none;
-  border: 1px solid #8f8f8f;
+  border: 1px solid #334;
   border-radius: 5px;
 }
 .contact .contact-form .card .form-group .contact-textarea {
   width: 100%;
   padding: 10px;
   border-style: none;
-  border: 1px solid #8f8f8f;
+  border: 1px solid #334;
   border-radius: 5px;
   height: 80px;
 }
@@ -652,7 +648,7 @@ article {
 }
 
 .contact .contact-form .card .form-group p {
-  color: #8f8f8f;
+  color: #334;
   font-size: 14px;
 }
 .my-bio {
@@ -699,6 +695,7 @@ article {
 .my-bio .contact-bio .card .name-bio {
   font-size: 15px;
 }
+
 .my-bio .contact-bio .card .text-muted {
   color: #334;
   font-size: 13px;
@@ -888,6 +885,7 @@ td {
 
 /* .footer  Style End */
 
+/* Responsive Start */
 @media (max-width: 1100px) {
   .header {
     padding: 3rem 4%;
@@ -1085,37 +1083,48 @@ td {
     min-height: 30vh;
     padding-top: 50px;
   }
+
   .main-counter .main-counter-container .content .box .counter {
     font-size: 30px;
   }
+
   .main-counter .main-counter-container .content .box .counter-container .plus {
     font-size: 23px;
   }
+
   .main-counter .main-counter-container .content .box .text {
     font-size: 18px;
   }
+
   .title .title-description {
     font-size: 35px;
   }
+
   .donate .donate-container .box-container .box .content p {
     padding: 15px 90px;
     font-size: 16px;
   }
+
   .donate .donate-container .box-container .box .content h1 {
     font-size: 24px;
   }
+
   .donate .donate-container .box-container .box .content .btn-donate {
     padding: 1.2rem 4rem;
   }
+
   .donate .donate-container .box-container .box .content .icons span {
     font-size: 19px;
   }
+
   .contact {
     display: block;
   }
+
   .contact .contact-form .card .form-group {
     margin: 10px 0px;
   }
+
   .contact .my-bio {
     width: 100%;
     float: none;
@@ -1126,12 +1135,15 @@ td {
   .footer .left .content .social {
     text-align: center;
   }
+
   .footer .center .content .phone {
     text-align: center;
   }
+
   .footer .center .content .place {
     text-align: center;
   }
+
   .footer .center .content .email {
     text-align: center;
   }
@@ -1141,16 +1153,20 @@ td {
   .about {
     padding: 140px 10px 0px;
   }
+
   .about .about-image {
     min-height: 350px;
     margin: 0px 20px;
   }
+
   .about .about-container h1 {
     font-size: 35px;
   }
+
   .about .about-container .icons-container {
     margin-top: 10px;
   }
+
   .main-counter .main-counter-container .counter-up {
     padding: 0px 30px;
   }
@@ -1158,9 +1174,11 @@ td {
   .donate .donate-container .box-container .box .content p {
     padding: 10px 2px;
   }
+
   .my-bio .contact-bio .card .name-bio {
     font-size: 19px;
   }
+
   .my-bio .contact-bio .card .text-muted {
     font-size: 16px;
   }
@@ -1401,3 +1419,5 @@ td {
     font-size: 12px;
   }
 }
+
+/* Responsive End */
