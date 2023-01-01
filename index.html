@@ -27,22 +27,34 @@
     />
 
     <!-- JQuery -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+    ></script>
 
-    <!-- Counter -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+    <!-- Waypoints -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"
+    ></script>
+
+    <!-- CounterUp 2 -->
+    <script
+      defer
+      src="https://unpkg.com/counterup2@2.0.2/dist/index.js"
+    ></script>
+
+    <!-- External JS -->
+    <script defer src="assets/js/script.js"></script>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
-
-    <!-- External JS -->
-    <script src="assets/js/script.js" defer></script>
 
     <link
       rel="preload"
       href="assets/image/hero-img.avif"
       as="image"
+      fetchpriority="high"
       type="image/avif"
     />
   </head>
@@ -140,7 +152,7 @@
       <!-- About End -->
 
       <!-- Service Start  -->
-      <article>
+      <article class="service">
         <div class="service-container swiper">
           <div class="title" id="service">
             <p class="title-sub">What We Do</p>
@@ -159,6 +171,7 @@
                     height="200"
                     alt="Image"
                     loading="lazy"
+                    fetchpriority="low"
                   />
                 </div>
                 <div class="service-details-container">
@@ -179,6 +192,8 @@
                     height="200"
                     alt="Image"
                     loading="lazy"
+                    fetchpriority="low"
+                    fetchpriority="low"
                   />
                 </div>
                 <div class="service-details-container">
@@ -199,6 +214,8 @@
                     height="200"
                     alt="Image"
                     loading="lazy"
+                    fetchpriority="low"
+                    fetchpriority="low"
                   />
                 </div>
                 <div class="service-details-container">
@@ -219,6 +236,7 @@
                     height="200"
                     alt="Image"
                     loading="lazy"
+                    fetchpriority="low"
                   />
                 </div>
                 <div class="service-details-container">
@@ -241,7 +259,7 @@
       <!-- Service End -->
 
       <!-- Counter Start-->
-      <article class="main-counter">
+      <article class="main-counter" id="main-counter">
         <div class="main-counter-container">
           <div class="counter-up">
             <div class="content">
@@ -303,6 +321,7 @@
                   src="assets/image/charity-img1.avif"
                   alt="Image"
                   loading="lazy"
+                  fetchpriority="high"
                 />
               </div>
               <div class="content">
@@ -327,6 +346,7 @@
                   src="assets/image/charity-img2.avif"
                   alt="Image"
                   loading="lazy"
+                  fetchpriority="high"
                 />
               </div>
               <div class="content">
@@ -351,6 +371,7 @@
                   src="assets/image/charity-img3.avif"
                   alt="Image"
                   loading="lazy"
+                  fetchpriority="high"
                 />
               </div>
               <div class="content">
@@ -375,6 +396,7 @@
                   src="assets/image/charity-img4.avif"
                   alt="Image"
                   loading="lazy"
+                  fetchpriority="low"
                 />
               </div>
               <div class="content">
@@ -399,6 +421,7 @@
                   src="assets/image/charity-img5.avif"
                   alt="Image"
                   loading="lazy"
+                  fetchpriority="low"
                 />
               </div>
               <div class="content">
@@ -423,6 +446,7 @@
                   src="assets/image/charity-img6.avif"
                   alt="Image"
                   loading="lazy"
+                  fetchpriority="low"
                 />
               </div>
               <div class="content">
@@ -503,6 +527,7 @@
                 alt="Thoriq Profile Photo"
                 class="profile-contact"
                 loading="lazy"
+                fetchpriority="low"
               />
               <h1 class="name-bio">Muhammad Thoriq Ali Said</h1>
               <p class="text-muted">

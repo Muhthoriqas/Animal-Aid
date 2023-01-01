@@ -41,11 +41,34 @@ var swiper = new Swiper(".slide-container", {
 });
 
 // Counter Animation
+
+// Counter-Up2 : https://github.com/bfintal/Counter-Up2
+// Code Source: https://codepen.io/mnunes/pen/RXQqXz
+
+const tes = document.getElementById("about");
+
 $(document).ready(function () {
-  $(".counter").counterUp({
-    delay: 20,
-    time: 300,
-    triggerOnce: true,
+  jQuery(function ($) {
+    "use strict";
+
+    var counterUp = window.counterUp["default"];
+
+    var $counters = $(".counter");
+
+    /* Start counting, do this on DOM ready or with Waypoints. */
+    $counters.each(function (ignore, counter) {
+      var waypoint = new Waypoint({
+        element: $(this),
+        handler: function () {
+          counterUp(counter, {
+            duration: 800,
+            delay: 20,
+          });
+          this.destroy();
+        },
+        offset: "bottom-in-view",
+      });
+    });
   });
 });
 
