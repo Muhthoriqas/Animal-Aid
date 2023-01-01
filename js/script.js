@@ -55,7 +55,6 @@ $(document).ready(function () {
 
     var $counters = $(".counter");
 
-    /* Start counting, do this on DOM ready or with Waypoints. */
     $counters.each(function (ignore, counter) {
       var waypoint = new Waypoint({
         element: $(this),
