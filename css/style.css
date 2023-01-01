@@ -706,13 +706,13 @@ article {
   margin-bottom: 20px;
 }
 
-.my-bio .contact-bio .card .table-responsive {
+.my-bio .contact-bio .card .table-container {
   display: inline-block;
   margin: 0 auto;
   margin-bottom: 30px;
 }
 
-.my-bio .contact-bio .contact-bio .table-responsive .bio-table {
+.my-bio .contact-bio .contact-bio .table-container .bio-table {
   border-spacing: 0px;
   width: auto;
   border: 2px solid #f7f7f7;
