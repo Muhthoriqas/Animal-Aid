@@ -49,7 +49,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 3. Open Your Text Editor
    ```sh
-   code . (for shorcut to open VScode)
+   *code .* (for shorcut to open VScode)
    ```
  
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
