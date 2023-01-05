@@ -1,7 +1,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Contents</summary>
   <ol>
     <li>
       <a href="#animalaid">About The Project</a>
