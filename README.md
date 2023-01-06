@@ -22,7 +22,7 @@
 Animal Aid is an organization that saves animals from suffering,rehabilitates and releases them back into the wild, and also works
 to protect their precious natural habitat. Our organization wasfounded on the belief that animals are entitled to good and respectful treatment at the hands of humans and should be protected by law.
 
-This project created by <b>Thoriq AS<b>, for final submission at Dicoding Course (Belajar Pemrograman Dasar Web) 
+This project created by <b>Thoriq AS</b>, for final submission at Dicoding Course (Belajar Pemrograman Dasar Web) 
 
 
 ### Built With, Pure :
