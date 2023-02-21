@@ -1,7 +1,7 @@
 
 <!-- TABLE OF CONTENTS -->
 <details>
-  <summary>Table of Contents</summary>
+  <summary>Contents</summary>
   <ol>
     <li>
       <a href="#animalaid">About The Project</a>
@@ -22,7 +22,7 @@
 Animal Aid is an organization that saves animals from suffering,rehabilitates and releases them back into the wild, and also works
 to protect their precious natural habitat. Our organization wasfounded on the belief that animals are entitled to good and respectful treatment at the hands of humans and should be protected by law.
 
-This project created by <b>Thoriq AS<b>, for final submission at Dicoding Course (Belajar Pemrograman Dasar Web) 
+This project created by <b>Thoriq AS</b>, for final submission at Dicoding Course (Belajar Pemrograman Dasar Web) 
 
 
 ### Built With, Pure :
@@ -49,7 +49,7 @@ _Below is an example of how you can instruct your audience on installing and set
    ```
 3. Open Your Text Editor
    ```sh
-   code . (for shorcut to open VScode)
+   *code .* (for shorcut to open VScode)
    ```
  
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
