@@ -45,8 +45,6 @@ var swiper = new Swiper(".slide-container", {
 // Counter-Up2 : https://github.com/bfintal/Counter-Up2
 // Code Source: https://codepen.io/mnunes/pen/RXQqXz
 
-const tes = document.getElementById("about");
-
 $(document).ready(function () {
   jQuery(function ($) {
     "use strict";
@@ -88,3 +86,48 @@ loadMoreBtn.onclick = () => {
     loadMoreBtn.style.display = "none";
   }
 };
+
+// Back to Top
+const backToTopBtn = document.getElementById("back-to-top-btn");
+
+window.addEventListener("scroll", () => {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    backToTopBtn.style.display = "block";
+  } else {
+    backToTopBtn.style.display = "none";
+  }
+});
+
+backToTopBtn.addEventListener("click", () => {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+});
+
+// Countdown
+const days = document.getElementById("days");
+const hours = document.getElementById("hours");
+const minutes = document.getElementById("minutes");
+const seconds = document.getElementById("seconds");
+
+const eventDate = new Date("March 23, 2023 04:00:00");
+
+const countdown = () => {
+  const now = new Date().getTime();
+  const timeRemaining = eventDate - now;
+
+  const daysCalc = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+  const hoursCalc = Math.floor(
+    (timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+  );
+  const minutesCalc = Math.floor(
+    (timeRemaining % (1000 * 60 * 60)) / (1000 * 60)
+  );
+  const secondsCalc = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+  days.innerHTML = daysCalc;
+  hours.innerHTML = hoursCalc;
+  minutes.innerHTML = minutesCalc;
+  seconds.innerHTML = secondsCalc;
+};
+
+setInterval(countdown, 1000);
